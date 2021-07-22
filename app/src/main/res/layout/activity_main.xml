@@ -29,7 +29,6 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
-
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -51,14 +50,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <Button
-        android:id="@+id/lock"
+        android:id="@+id/Lock"
         android:layout_width="120sp"
         android:layout_height="120sp"
         android:layout_marginTop="16dp"
         android:layout_gravity="center"
         android:layout_marginLeft="40dp"
         android:background="@drawable/lock"
-        app:backgroundTint="@color/black"
         android:layout_marginBottom="16dp"/>
     <Button
         android:id="@+id/alarm"
@@ -67,7 +65,6 @@
         android:layout_marginTop="16dp"
         android:layout_gravity="center"
         android:background="@drawable/ic_baseline_alarm_24"
-        app:backgroundTint="@color/black"
         android:layout_marginBottom="16dp"/>
     </LinearLayout>
 

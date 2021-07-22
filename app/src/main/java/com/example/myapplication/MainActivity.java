@@ -28,7 +28,7 @@ import java.io.OutputStream;
 public class MainActivity extends AppCompatActivity{
     public static TextView CarData;
     ImageView Car;
-    Button LockCar, launchSettings;
+    Button Lock, launchSettings;
 
     private static final String TAG = "MainActivity";
     BluetoothDevice mBTDevice;
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity{
 
     private final static int CONNECTING_STATUS = 1; // used in bluetooth handler to identify message status
     private final static int MESSAGE_READ = 2; // used in bluetooth handler to identify message update
+
 
 
     //When the app is closed
@@ -103,7 +104,15 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
+        Button Lock = findViewById(R.id.Lock);
+        Lock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "click", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
 
     public void launchSettings() {
         android.content.Intent intent = new Intent(this, Settings.class);
