@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +28,7 @@ import java.io.OutputStream;
 
 public class MainActivity extends AppCompatActivity{
     public static TextView CarData;
+    public static int V;
     ImageView Car;
     Button Lock, launchSettings;
 
@@ -108,7 +110,26 @@ public class MainActivity extends AppCompatActivity{
         Lock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "click", Toast.LENGTH_SHORT).show();
+                if (V == 1) {
+                    Lock.setEnabled(false);
+                    Toast.makeText(MainActivity.this, "Bilen är öppen", Toast.LENGTH_SHORT).show();
+                    V = 0;
+                } else {
+                    Lock.setEnabled(true);
+                    Toast.makeText(MainActivity.this, "Bilen är låst", Toast.LENGTH_SHORT).show();
+                    V = 1;
+                }
+            }
+        });
+
+
+
+
+        Button alarm = findViewById(R.id.alarm);
+        alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Alarmet är på", Toast.LENGTH_SHORT).show();
             }
         });
     }

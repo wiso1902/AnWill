@@ -72,11 +72,10 @@
         android:id="@+id/Settings"
         android:layout_width="292sp"
         android:layout_height="80sp"
-        android:layout_marginBottom="16dp"
         android:layout_gravity="center_horizontal"
         android:text="Settings"
         android:textSize="30sp"
-        app:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
+
 </LinearLayout>

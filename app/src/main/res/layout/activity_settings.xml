@@ -55,7 +55,7 @@
                 android:id="@+id/setting1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="Toggle Bluetooth Device"
+                android:text="Ansult till enhet"
                 android:gravity="center_vertical"
                 android:textSize="20sp"/>
 
